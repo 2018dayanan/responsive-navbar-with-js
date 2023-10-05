@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>LoGo</h1>
+                </div>
+                <ul id="menus">
+                    <i class="fa-solid fa-circle-xmark" id="close"></i>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+
+
+                    <div class="nav_footer">
+                        <div class="copyright">
+                            <p>&copy;2023 DayChy</p>
+                        </div>
+                        <div class="logo2">
+                            <h1>LoGo</h1>
+                        </div>
+                    </div>
+
+
+                </ul>
+                <i class="fa-solid fa-bars-staggered" id="bars"></i>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>Hero Section</h1>
+    </section>
+    <section id="about">
+        <h1>About</h1>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
+    </section>
+    <section id="services">
+        <h1>Services</h1>
+    </section>
+    <section id="blog">
+        <h1>Blog</h1>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const menu = document.getElementById('menus');
+        const bar = document.getElementById('bars');
+        const cl = document.getElementById('close');
+
+        bar.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        })
+
+        cl.addEventListener('click', () => {
+            menu.classList.remove('show');
+
+        })
+        menu.addEventListener('click', () => {
+            menu.classList.remove('show');
+
+        })
+
+    </script>
+
+</body>
+
+</html>
