@@ -58,34 +58,28 @@
         <h1>Blog</h1>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script>
         const menu = document.getElementById('menus');
         const bar = document.getElementById('bars');
         const cl = document.getElementById('close');
+        const body = document.querySelector('body');
 
         bar.addEventListener('click', () => {
             menu.classList.toggle('show');
+            body.classList.toggle('body');
+
         })
 
         cl.addEventListener('click', () => {
             menu.classList.remove('show');
+            body.classList.remove('body');
+
 
         })
         menu.addEventListener('click', () => {
             menu.classList.remove('show');
+            body.classList.remove('body');
+
 
         })
 
